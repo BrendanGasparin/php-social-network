@@ -8,7 +8,17 @@
     <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Social Network</h1>
+    <header>
+      <h1>Social Network</h1>
+        <nav>
+          <ul>
+            <li>Menu</li>
+            <li>DMs</li>
+            <li>Notifications</li>
+            <li>Account</li>
+          </ul>
+        </nav>
+    </header>
     <p>Here is some text.</p>
   </body>
 </html>
