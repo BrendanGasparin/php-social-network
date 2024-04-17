@@ -10,14 +10,14 @@
   <body>
     <header>
       <h1>Social Network</h1>
-        <nav>
-          <ul>
-            <li>Menu</li>
-            <li>DMs</li>
-            <li>Notifications</li>
-            <li>Account</li>
-          </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>Menu</li>
+          <li>DMs</li>
+          <li>Notifications</li>
+          <li>Account</li>
+        </ul>
+      </nav>
     </header>
     <p>Here is some text.</p>
   </body>
