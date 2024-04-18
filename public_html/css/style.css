@@ -1,17 +1,28 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    background-color: blue;
-    color: white;
+  color: blue;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
 }
 
 nav ul {
-    display: flex;
-    list-style-type: none;
+  display: flex;
+  list-style-type: none;
+}
+
+form.login-form {
+  text-align: center;
+}
+
+form.login-form input {
+  width: 90%;
+  margin-bottom: 20px;
 }

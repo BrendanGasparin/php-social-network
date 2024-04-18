@@ -9,8 +9,8 @@
   </head>
   <body>
     <header>
-      <h1>Social Network</h1>
-      <nav>
+    <h1>Social Network</h1>
+    <!--    <nav>
         <ul>
           <li>Menu</li>
           <li>DMs</li>
@@ -18,7 +18,14 @@
           <li>Account</li>
         </ul>
       </nav>
+    </header> -->
     </header>
-    <p>Here is some text.</p>
+    <main>
+      <form class="login-form">
+        <input type="text" />
+        <input type="text" />
+        <button>Log in</button>
+      </form>
+    </main>
   </body>
 </html>
