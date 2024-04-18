@@ -26,6 +26,12 @@
         <input type="text" />
         <button>Log in</button>
       </form>
+      <div class="login-or">
+        <hr>
+        <p>or</p>
+        <hr>
+      </div>
+      </form>
     </main>
   </body>
 </html>

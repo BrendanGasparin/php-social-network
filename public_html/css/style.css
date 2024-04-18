@@ -36,3 +36,21 @@ form.login-form button {
   color: white;
   font-weight: bold;
 }
+
+div.login-or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+}
+
+div.login-or hr {
+  width: 40%;
+  height: 3px;
+}
+
+div.login-or br {
+  width: 20%;
+  text-align: center;
+}
