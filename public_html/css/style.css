@@ -32,4 +32,7 @@ form.login-form input {
 form.login-form button {
   width: 90%;
   padding: 12px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
 }
