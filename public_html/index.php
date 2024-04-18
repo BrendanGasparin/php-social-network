@@ -31,7 +31,7 @@
         <p>or</p>
         <hr>
       </div>
-      </form>
+      <button class="new-account">Create new account</button>
     </main>
   </body>
 </html>
