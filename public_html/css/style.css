@@ -18,6 +18,10 @@ nav ul {
   list-style-type: none;
 }
 
+button {
+  border-radius: 12px;
+}
+
 form.login-form {
   text-align: center;
   font-size: 20px;
@@ -57,5 +61,7 @@ div.login-or br {
 
 button.new-account {
   display: block;
+  width: 65%;
   margin: 20px auto;
+  padding: 12px;
 }
