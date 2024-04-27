@@ -18,20 +18,23 @@
 
         <br />
         <div class="date-picker">
-          <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
+          <select class="day-picker">
           </select>
           <select class="month-picker">
             <option>Jan</option>
             <option>Feb</option>
             <option>Mar</option>
+            <option>Apr</option>
+            <option>May</option>
+            <option>Jun</option>
+            <option>Jul</option>
+            <option>Aug</option>
+            <option>Sep</option>
+            <option>Oct</option>
+            <option>Nov</option>
+            <option>Dec</option>
           </select>
-          <select>
-            <option>2010</option>
-            <option>2009</option>
-            <option>2008</option>
+          <select class="year-picker">
           </select>
         </div>
         <br />
