@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Social Network</title>
     <link href="./css/style.css" rel="stylesheet" />
-    <script src="./js/datepicker.js"></script>
   </head>
   <body>
     <header>
@@ -19,9 +18,9 @@
 
         <br />
         <div class="date-picker">
-          <select class="day-picker">
+          <select class="day-picker" id="day-picker">
           </select>
-          <select class="month-picker">
+          <select class="month-picker" id="month-picker">
             <option>Jan</option>
             <option>Feb</option>
             <option>Mar</option>
@@ -35,13 +34,16 @@
             <option>Nov</option>
             <option>Dec</option>
           </select>
-          <select class="year-picker">
+          <select class="year-picker" id="year-picker">
           </select>
         </div>
         <br />
 
         <button>Log in</button>
       </form>
+
+      <script src="./js/datepicker.js"></script>
+
     </main>
   </body>
 </html>
