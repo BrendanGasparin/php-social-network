@@ -45,6 +45,10 @@ form.login-form button {
   font-weight: bold;
 }
 
+form.login-form p {
+  margin-bottom: 12px;
+}
+
 div.login-or {
   display: flex;
   justify-content: center;
