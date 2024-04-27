@@ -13,16 +13,29 @@
     </header>
     <main>
       <form class="login-form">
-        <input type="text" />
-        <input type="text" />
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Second name" />
+
+        <br />
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <select class="month-picker">
+          <option>Jan</option>
+          <option>Feb</option>
+          <option>Mar</option>
+        </select>
+        <select>
+          <option>2010</option>
+          <option>2009</option>
+          <option>2008</option>
+        </select>
+        <br />
+
         <button>Log in</button>
       </form>
-      <div class="login-or">
-        <hr>
-        <p>or</p>
-        <hr>
-      </div>
-      <button class="new-account">Create new account</button>
     </main>
   </body>
 </html>

@@ -22,7 +22,7 @@
         <p>or</p>
         <hr>
       </div>
-      <button class="new-account">Create new account</button>
+      <a href="./signup.php" class="button-link"><button class="new-account">Create new account</button></a>
     </main>
   </body>
 </html>
