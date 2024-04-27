@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Social Network</title>
     <link href="./css/style.css" rel="stylesheet" />
+    <script src="./js/datepicker.js"></script>
   </head>
   <body>
     <header>
