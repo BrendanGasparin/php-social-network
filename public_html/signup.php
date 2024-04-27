@@ -14,13 +14,13 @@
     <main>
       <form action="." class="login-form" method="post">
         <input name="firstname" type="text" placeholder="First name" />
-        <input type="text" placeholder="Second name" />
+        <input name="secondname" type="text" placeholder="Second name" />
 
         <br />
         <div class="date-picker">
-          <select class="day-picker" id="day-picker">
+          <select class="day-picker" id="day-picker" name="day-picker">
           </select>
-          <select class="month-picker" id="month-picker">
+          <select class="month-picker" id="month-picker" name="month-picker">
             <option value="1">Jan</option>
             <option value="2">Feb</option>
             <option value="3">Mar</option>
@@ -34,10 +34,13 @@
             <option value="11">Nov</option>
             <option value="12">Dec</option>
           </select>
-          <select class="year-picker" id="year-picker">
+          <select class="year-picker" id="year-picker" name="year-picker">
           </select>
         </div>
         <br />
+
+        <input id="password" name="password" placeholder="Password" type="password" />
+        <input id="password2" name="password2" placeholder="Repeat password" type="password" />
 
         <!-- TODO: Username -->
         <!-- TODO: Gender -->
