@@ -1,15 +1,16 @@
-var dayPicker = document.getElementById("day-picker");
-var monthPicker = document.getElementById("month-picker");
-var yearPicker = document.getElementById("year-picker");
+var dayPicker = document.getElementById("day-picker");      // Day <select> element
+var monthPicker = document.getElementById("month-picker");  // Month <select> element
+var yearPicker = document.getElementById("year-picker");    // Year <select> element
 
-var currentDate = new Date();
-var currentYear = currentDate.getFullYear();
+var currentDate = new Date();                               // Today's date
+var currentYear = currentDate.getFullYear();                // The current year
 
-var selectedMonth = currentDate.getMonth() + 1;
-var selectedDay = currentDate.getDate();
-var selectedYear = currentYear - 13;
+var selectedMonth = currentDate.getMonth() + 1;             // The currently selected month
+var selectedDay = currentDate.getDate();                    // The currently selected day
+var selectedYear = currentYear - 13;                        // The currently selected year
+
+// Set the current month
 monthPicker.value = selectedMonth;
-dayPicker.value = currentDate;
 
 // Populate the years in the select box dropdown
 for (var i = currentYear - 13; i > currentYear - 131; i--) {
@@ -34,19 +35,29 @@ yearPicker.addEventListener("change", function() {
 populateDays();
 dayPicker.value = selectedDay;
 
-// Populate the days select dropdown according to the selected month and year
+// Populate the days <select> dropdown according to the selected month and year
 function populateDays() {
     var month = monthPicker.value;
     var year = yearPicker.value;
     var days;
 
-    // Remove all child nodes of the day picker
+    // Remove all child nodes of the day <select>
     while(dayPicker.firstChild) {
         dayPicker.removeChild(dayPicker.firstChild);
     }
     
-    // TODO: handle leap years
-    if (month == 2) {
+    // Determine number of days in the selected month for the selected year
+    // (watching out for leap years)
+    if (month == 2 && year % 100 == 0 && year % 400 == 0) {
+        days = 29;
+    }
+    else if (month == 2 && year % 100 == 0) {
+        days = 28;
+    }
+    else if (month == 2 && year % 4 == 0) {
+        days = 29;
+    }
+    else if (month == 2) {
         days = 28;
     }
     else if (month == 9 || month == 4 || month == 6 || month == 11) {
@@ -56,6 +67,7 @@ function populateDays() {
         days = 31;
     }
 
+    // Append the new child nodes to the day <select>
     for (var i = 1; i <= days; i++) {
         var option = document.createElement("option");
         option.textContent = i;

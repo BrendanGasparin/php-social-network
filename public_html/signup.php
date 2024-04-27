@@ -12,8 +12,8 @@
     <h1>Social Network</h1>
     </header>
     <main>
-      <form class="login-form">
-        <input type="text" placeholder="First name" />
+      <form action="." class="login-form" method="post">
+        <input name="firstname" type="text" placeholder="First name" />
         <input type="text" placeholder="Second name" />
 
         <br />
@@ -38,6 +38,9 @@
           </select>
         </div>
         <br />
+
+        <!-- TODO: Gender -->
+        <!-- TODO: Password -->
 
         <button>Log in</button>
       </form>
