@@ -13,10 +13,12 @@
     </header>
     <main>
       <form action="." class="login-form" method="post">
-        <input name="firstname" type="text" placeholder="First name" />
-        <input name="secondname" type="text" placeholder="Second name" />
-
+        <p>Name</p>
+        <input id="firstname" name="firstname" type="text" placeholder="First name" />
+        <input id="sencondname"name="secondname" type="text" placeholder="Second name" />
         <br />
+
+        <p>Date of Birth</p>
         <div class="date-picker">
           <select class="day-picker" id="day-picker" name="day-picker">
           </select>
@@ -39,6 +41,7 @@
         </div>
         <br />
 
+        <p>Password</p>
         <input id="password" name="password" placeholder="Password" type="password" />
         <input id="password2" name="password2" placeholder="Repeat password" type="password" />
 
