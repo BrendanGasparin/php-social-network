@@ -49,7 +49,7 @@
         <!-- TODO: Gender -->
         <!-- TODO: Password -->
 
-        <button>Log in</button>
+        <button>Sign up</button>
       </form>
 
       <script src="./js/datepicker.js"></script>
