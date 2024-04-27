@@ -17,21 +17,23 @@
         <input type="text" placeholder="Second name" />
 
         <br />
-        <select>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-        </select>
-        <select class="month-picker">
-          <option>Jan</option>
-          <option>Feb</option>
-          <option>Mar</option>
-        </select>
-        <select>
-          <option>2010</option>
-          <option>2009</option>
-          <option>2008</option>
-        </select>
+        <div class="date-picker">
+          <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+          <select class="month-picker">
+            <option>Jan</option>
+            <option>Feb</option>
+            <option>Mar</option>
+          </select>
+          <select>
+            <option>2010</option>
+            <option>2009</option>
+            <option>2008</option>
+          </select>
+        </div>
         <br />
 
         <button>Log in</button>

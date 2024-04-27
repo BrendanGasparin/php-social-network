@@ -73,3 +73,15 @@ button.new-account {
 a.button-link {
   text-decoration: none;
 }
+
+div.date-picker {
+  width: 90%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.date-picker select {
+  width: 30%;
+  padding: 12px;
+}
