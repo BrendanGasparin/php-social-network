@@ -13,7 +13,7 @@
     <h1>Social Network</h1>
     </header>
     <main>
-      <form class="login-form">
+      <form class="user-form">
         <input type="text" />
         <input type="text" />
         <button>Log in</button>

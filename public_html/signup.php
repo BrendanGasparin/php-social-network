@@ -12,7 +12,7 @@
     <h1>Social Network</h1>
     </header>
     <main>
-      <form action="." class="login-form" method="post">
+      <form action="." class="user-form" method="post">
         <p>Name</p>
         <input id="firstname" name="firstname" type="text" placeholder="First name" />
         <input id="lastname"name="lastname" type="text" placeholder="Last name" />
