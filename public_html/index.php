@@ -21,9 +21,9 @@
         <button>Log in</button>
       </form>
       <div class="login-or">
-        <hr>
+        <hr />
         <p>or</p>
-        <hr>
+        <hr />
       </div>
       <a href="./signup.php" class="button-link"><button class="new-account">Create new account</button></a>
     </main>
