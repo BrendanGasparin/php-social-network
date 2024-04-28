@@ -11,6 +11,8 @@
   <body>
     <header>
     <h1>PHP Social Network</h1>
+    <hr class="largescreens-only" />
+    <p class="largescreens-only">Sign up to get started!</p>
     </header>
     <main>
       <form action="." class="user-form" method="post">
