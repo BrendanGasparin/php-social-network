@@ -20,7 +20,7 @@
         <br />
 
         <p>Date of Birth</p>
-        <div class="date-picker">
+        <div class="three-columns">
           <select class="day-picker" id="day-picker" name="day-picker">
           </select>
           <select class="month-picker" id="month-picker" name="month-picker">
@@ -49,9 +49,6 @@
         <p>Password</p>
         <input id="password" name="password" placeholder="Password" type="password" />
         <input id="password2" name="password2" placeholder="Repeat password" type="password" />
-
-        <!-- TODO: Username -->
-        <!-- TODO: Gender -->
 
         <button>Sign up</button>
       </form>

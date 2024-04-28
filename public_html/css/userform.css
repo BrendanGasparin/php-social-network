@@ -38,6 +38,10 @@ form.user-form {
     width: 20%;
     text-align: center;
   }
+
+  button {
+    font-size: 18px;
+  }
   
   button.new-account {
     display: block;
@@ -50,14 +54,14 @@ form.user-form {
     text-decoration: none;
   }
   
-  div.date-picker {
+  div.three-columns {
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
   }
   
-  div.date-picker select {
+  div.three-columns select {
     width: 30%;
     padding: 12px;
   }
