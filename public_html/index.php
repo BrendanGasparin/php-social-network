@@ -11,6 +11,8 @@
   <body>
     <header>
     <h1>PHP Social Network</h1>
+    <hr class="largescreens-only" />
+    <p class="largescreens-only">A free and open source social network.</p>
     </header>
     <main>
       <form class="user-form">
