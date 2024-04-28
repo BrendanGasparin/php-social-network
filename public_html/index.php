@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Social Network</title>
     <link href="./css/style.css" rel="stylesheet" />
-    <link href=",/css/userform.css" rel="stylesheet" />
+    <link href="./css/userform.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-    <h1>Social Network</h1>
+    <h1>PHP Social Network</h1>
     </header>
     <main>
       <form class="user-form">
