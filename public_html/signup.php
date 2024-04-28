@@ -15,7 +15,7 @@
       <form action="." class="login-form" method="post">
         <p>Name</p>
         <input id="firstname" name="firstname" type="text" placeholder="First name" />
-        <input id="sencondname"name="secondname" type="text" placeholder="Second name" />
+        <input id="lastname"name="lastname" type="text" placeholder="Last name" />
         <br />
 
         <p>Date of Birth</p>
