@@ -26,6 +26,15 @@ button {
   border-radius: 12px;
 }
 
+.centered-16px {
+  text-align: center;
+  font-size: 16px;
+}
+
+.top-margin-20px {
+  margin-top: 20px;
+}
+
 form.login-form {
   text-align: center;
   font-size: 20px;

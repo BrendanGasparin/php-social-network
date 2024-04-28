@@ -47,10 +47,11 @@
 
         <!-- TODO: Username -->
         <!-- TODO: Gender -->
-        <!-- TODO: Password -->
 
         <button>Sign up</button>
       </form>
+
+      <p class="centered-16px top-margin-20px">Already have an account? <a href="./index.php">Sign in</a>.</p>
 
       <script src="./js/datepicker.js"></script>
 
