@@ -42,6 +42,10 @@
         </div>
         <br />
 
+        <p>Credentials</p>
+        <input id="username" name="username" placeholder="Username" type="text" />
+        <input id="email" name="email" placeholder="Email address" type="email" />
+
         <p>Password</p>
         <input id="password" name="password" placeholder="Password" type="password" />
         <input id="password2" name="password2" placeholder="Repeat password" type="password" />
