@@ -62,4 +62,10 @@ hr {
     justify-content: space-around;
     align-items: center;
   }
+
+  header {
+    width: 30%;
+    text-align: center;
+    padding-bottom: 240px;
+  }
 }
