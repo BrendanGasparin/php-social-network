@@ -14,8 +14,8 @@
     </header>
     <main>
       <form class="user-form">
-        <input type="text" />
-        <input type="text" />
+        <input type="text" placeholder="Username/Email" />
+        <input type="password" placeholder="Password" />
         <button>Log in</button>
       </form>
       <div class="login-or">
