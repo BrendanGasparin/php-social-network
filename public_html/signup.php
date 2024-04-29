@@ -52,7 +52,7 @@
         <input id="password" name="password" placeholder="Password" type="password" />
         <input id="password2" name="password2" placeholder="Repeat password" type="password" />
 
-        <button>Sign up</button>
+        <button name="submit" type="submit">Sign up</button>
       </form>
 
       <p class="centered-16px top-margin-20px">Already have an account? <a href="./index.php">Sign in</a>.</p>

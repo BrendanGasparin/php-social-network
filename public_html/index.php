@@ -18,7 +18,7 @@
       <form class="user-form">
         <input type="text" placeholder="Username/Email" />
         <input type="password" placeholder="Password" />
-        <button>Log in</button>
+        <button name="submit" type="submit">Log in</button>
       </form>
       <div class="login-or">
         <hr />
