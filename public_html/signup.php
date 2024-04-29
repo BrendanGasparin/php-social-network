@@ -21,6 +21,10 @@
         <input id="lastname"name="lastname" type="text" placeholder="Last name" />
         <br />
 
+        <p>Credentials</p>
+        <input id="username" name="username" placeholder="Username" type="text" />
+        <input id="email" name="email" placeholder="Email address" type="email" />
+
         <p>Date of Birth</p>
         <div class="three-columns">
           <select class="day-picker" id="day-picker" name="day-picker">
@@ -43,10 +47,6 @@
           </select>
         </div>
         <br />
-
-        <p>Credentials</p>
-        <input id="username" name="username" placeholder="Username" type="text" />
-        <input id="email" name="email" placeholder="Email address" type="email" />
 
         <p>Password</p>
         <input id="password" name="password" placeholder="Password" type="password" />
