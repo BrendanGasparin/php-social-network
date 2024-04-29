@@ -43,4 +43,11 @@
             else
                 return true;
         }
+
+        private function passwords_match() {
+            if ($this->password == $this->password2)
+                return true;
+            else
+                return false;
+        }
     }
