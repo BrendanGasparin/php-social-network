@@ -1,2 +1,5 @@
 # php-social-network
-A social network built in PHP, HTML, CSS, JavaScript, and a MySQL database.
+Free and open source social network software built in PHP, HTML, CSS, and JavaScript, with a MySQL database.
+
+## Installation
+Clone the repository to your server of choice. Note that the root of the web server should be the /public_html/ directory and not the root of the repository.
