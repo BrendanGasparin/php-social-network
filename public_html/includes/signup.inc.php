@@ -19,7 +19,11 @@
         $month = $_POST["month-picker"];
         $year = $_POST["year-picker"];
 
-        // TODO: Instantiate the SignupController class
+        // Instantiate the SignupController class
+        include "../classes/signup.classes.php";
+        include "../classes/signup-controller.classes.php";
+        $signupController = new SignupController($firstName, $lastName, $username, $email, $dob, $password, $password2);
+
         // TODO: Run error handlers and user signup
         // TODO: Go back to the home page
     }
