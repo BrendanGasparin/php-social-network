@@ -19,41 +19,61 @@
             $this->$password2 = $password2;
         }
 
+        private function signupUser() {
+            if ($this->emptyInput()) {
+                header("location: ../index.php?error=emptyinputfield");
+                exit();
+            }
+            if ($this->invalidUsername()) {
+                header("location: ../index.php?error=invalidusername");
+                exit();
+            }
+            if ($this->invalidEmail()) {
+                header("location: ../index.php?error=invalidemail");
+                exit();
+            }
+            if ($this->passwordMatch() == false) {
+                header("location: ../index.php?error=passwordsdonotmatch");
+                exit();
+            }
+            if ($this->userExists()) {
+                header("location: ../index.php?error=usernameoremailtaken");
+                exit();
+            }
+        }
+
         // Check that all required fields are filled
         private function emptyInput() {
             if (empty($this->$firstname) || empty($this->$lastname) || empty($this->$username) || empty($this->$email) || empty($this->$firstname) || empty($this->$password || empty($this->$password2)))
                 return true;
-            else
-                return false;
+            return false;
         }
 
         // Allow usernames consisting of alphanumeric characters, periods, and underscores,
         // but the first character must be alphabetic.
         private function invalidUsername() {
-            if (!pregmatch("/^[a-zA-Z][a-zA-Z0-9._]*$/", $this->username))
+            if (!pregmatch("/^[a-zA-Z][a-zA-Z0-9._]*$/", $this->$username))
                 return true;
-            else
-                return false;
+            return false;
         }
 
         // Check email is valid
         private function invalidEmail() {
-            if (!filter_var($this->email, FILTER_VALIDATE_EMAIL))
+            if (!filter_var($this->$email, FILTER_VALIDATE_EMAIL))
                 return false;
-            else
-                return true;
+            return true;
         }
 
         // Check that the two password fields match
-        private function passwords_match() {
-            if ($this->password == $this->password2)
+        private function passwordsMatch() {
+            if ($this->$password == $this->$password2)
                 return true;
             else
                 return false;
         }
 
-        // Check that the two password fields match
-        private function user_exists() {
+        // Check to see if the user already exists
+        private function userExists() {
             if ($this->checkUserExists($this->$username, $this->$email))
                 return true;
             else
