@@ -25,12 +25,17 @@ Update the password for the root user (the default installation has no password)
 
     ALTER USER 'root'@'localhost' IDENTIFIED BY '<new password>';
 
-Be sure to note the new password as you will need to configure PHP Social Network to use it.
-
 Create the social network database:
 
     CREATE DATABASE social_network;
-    exit;
+
+MySQL and PHP do not play nice when you use the root user, so create a new user, substituting username with your chosen username and password with a secure password:
+
+    CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+    GRANT ALL PRIVILEGES ON social_network.* TO 'username'@'localhost';
+    FLUSH PRIVILEGES;
+
+Be sure to note the new username and password as you will need to configure PHP Social Network to use them.
 
 Locate the setup_db.sql file in the root directory of the cloned git repository. Run it as follows:
 
@@ -47,7 +52,7 @@ This new file is where PHP Social Network will look for database login informati
 
     sudo nano ./public_html/credentials/credentials.php
 
-Insert the password you selected for the root MySQL user into this file at the appropriate place. You may also modify the MySQL username, host, and database name here.
+Insert the username and password you selected for the root MySQL user into this file at the appropriate place. You may also modify the host and database name here.
 
 To save and exit the credentials file in Nano, hit Control-X and then type Y and Enter at the prompt.
 

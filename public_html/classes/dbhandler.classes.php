@@ -1,12 +1,12 @@
 <?php
 class DBHandler {
-    private function connect() {
-        require_once '../credentials/credentials.php';
+    protected function connect() {
+        include '../credentials/credentials.php';
         try {
             $dbhandler = new PDO('mysql:host=' . $dbHost . ';dbname=' . $dbName, $username, $password);
             return $dbhandler;
         }
-        catch (PDEOException $e) {
+        catch (PDOException $e) {
             print "Error: " . $e->getMessage() . "<br />";
             die();
         }

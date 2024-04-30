@@ -15,7 +15,7 @@
     <p class="largescreens-only">Sign up to get started!</p>
     </header>
     <main>
-      <form action="." class="user-form" method="post">
+      <form action="./includes/signup.inc.php" class="user-form" method="post">
         <p>Name</p>
         <input id="firstname" name="firstname" type="text" placeholder="First name" />
         <input id="lastname"name="lastname" type="text" placeholder="Last name" />

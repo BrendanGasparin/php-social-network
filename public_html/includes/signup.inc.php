@@ -19,11 +19,18 @@
         $month = $_POST["month-picker"];
         $year = $_POST["year-picker"];
 
+        error_reporting(E_ALL);
+        ini_set('display_errors', 1);
+
         // Instantiate the SignupController class
+        include "../classes/dbhandler.classes.php";
         include "../classes/signup.classes.php";
         include "../classes/signup-controller.classes.php";
-        $signupController = new SignupController($firstName, $lastName, $username, $email, $dob, $password, $password2);
+        $signupController = new SignupController($firstName, $lastName, $username, $email, $day, $month, $year, $password, $password2);
 
-        // TODO: Run error handlers and user signup
-        // TODO: Go back to the home page
+        // Run error handlers and user signup
+        $signupController->signupUser();
+
+        // Go back to the home page
+        header("location: ../index.php?error=signupsuccess");
     }
