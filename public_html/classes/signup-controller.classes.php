@@ -51,4 +51,12 @@
             else
                 return false;
         }
+
+        // Check that the two password fields match
+        private function user_exists() {
+            if ($this->checkUserExists($this->$username, $this->$email))
+                return true;
+            else
+                return false;
+        }
     }
