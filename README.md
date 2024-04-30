@@ -41,13 +41,13 @@ This will import the database structure into the social_network database.
 ### Configuring PHP Social Network to use MySQL
 From the root directory of the cloned repository, copy the credentials-template.php file to a new file called credentials.php:
 
-    sudo cp ./credentials/credentials-template.php ./credentials/credentials.php
+    sudo cp ./public_html/credentials/credentials-template.php ./public_html/credentials/credentials.php
 
 This new file is where PHP Social Network will look for database login information. Edit credentials.php, e.g. with Nano:
 
-    sudo nano ./credentials/credentials.php
+    sudo nano ./public_html/credentials/credentials.php
 
-Insert the password you selected for the root MySQL user into this file. You may also modify the MySQL username, host, and database name here.
+Insert the password you selected for the root MySQL user into this file at the appropriate place. You may also modify the MySQL username, host, and database name here.
 
 To save and exit the credentials file in Nano, hit Control-X and then type Y and Enter at the prompt.
 
