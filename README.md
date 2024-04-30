@@ -34,7 +34,21 @@ Create the social network database:
 
 Locate the setup_db.sql file in the root directory of the cloned git repository. Run it as follows:
 
-    mysql -u root -p social_network < path/to/setup_db.sql
+    sudo mysql -u root -p social_network < path/to/setup_db.sql
 
-This will import the database structure into the social_network database
+This will import the database structure into the social_network database.
 
+### Configuring PHP Social Network to use MySQL
+From the root directory of the cloned repository, copy the credentials-template.php file to a new file called credentials.php:
+
+    sudo cp ./credentials/credentials-template.php ./credentials/credentials.php
+
+This new file is where PHP Social Network will look for database login information. Edit credentials.php, e.g. with Nano:
+
+    sudo nano ./credentials/credentials.php
+
+Insert the password you selected for the root MySQL user into this file. You may also modify the MySQL username, host, and database name here.
+
+To save and exit the credentials file in Nano, hit Control-X and then type Y and Enter at the prompt.
+
+PHP Social Network is now configured and ready for new users!
