@@ -9,12 +9,17 @@ form.user-form {
     padding: 12px;
   }
   
-  form.user-form button {
+  form.user-form button, button.log {
     width: 90%;
     padding: 12px;
     background-color: blue;
     color: white;
     font-weight: bold;
+  }
+
+  button.log {
+    display: block;
+    margin: 20px auto;
   }
   
   form.user-form p {
@@ -30,6 +35,8 @@ form.user-form {
   }
   
   div.login-or hr {
+    flex: 1;
+    margin: 0;
     width: 40%;
     height: 3px;
   }

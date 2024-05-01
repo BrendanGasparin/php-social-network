@@ -55,7 +55,7 @@
         <button name="submit" type="submit">Sign up</button>
       </form>
 
-      <p class="centered-16px top-margin-20px">Already have an account? <a href="./index.php">Sign in</a>.</p>
+      <p class="centered-16px top-margin-20px">Already have an account? <a href="./index.php">Log in</a>.</p>
 
       <script src="./js/datepicker.js"></script>
 
