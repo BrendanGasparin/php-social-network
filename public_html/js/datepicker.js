@@ -79,7 +79,4 @@ function populateDays() {
 
         dayPicker.appendChild(option);
     }
-
-    // If the dayPicker can sensibly be kept as its original value
-    // then keep that original value
 }
