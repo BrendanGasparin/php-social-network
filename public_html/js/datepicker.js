@@ -39,6 +39,7 @@ dayPicker.value = selectedDay;
 function populateDays() {
     var month = monthPicker.value;
     var year = yearPicker.value;
+    var day = dayPicker.value;
     var days;
 
     // Remove all child nodes of the day <select>
@@ -72,6 +73,13 @@ function populateDays() {
         var option = document.createElement("option");
         option.textContent = i;
         option.value = i;
+
+        if (i == day)
+            option.selected = true;
+
         dayPicker.appendChild(option);
     }
+
+    // If the dayPicker can sensibly be kept as its original value
+    // then keep that original value
 }
