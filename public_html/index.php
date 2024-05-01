@@ -15,6 +15,10 @@
     <p class="largescreens-only">A free and open source social network.</p>
     </header>
     <main>
+      <?php
+      if ($_GET["status"] == "signupsuccess")
+          echo "<h2 class=\"status\">Account successfully created!</h2>\n";
+      ?>
       <form class="user-form">
         <input type="text" placeholder="Username/Email" />
         <input type="password" placeholder="Password" />
