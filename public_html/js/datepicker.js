@@ -74,6 +74,8 @@ function populateDays() {
         option.textContent = i;
         option.value = i;
 
+        // Do not change the selected day unless that day
+        // does not exist in the selected month and year
         if (i == day)
             option.selected = true;
 
