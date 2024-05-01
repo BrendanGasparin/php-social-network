@@ -17,7 +17,8 @@
     <main>
       <?php
       if ($_GET["status"] == "signupsuccess")
-          echo "<h2 class=\"status\">Account successfully created!</h2>\n";
+          echo "<h2 class=\"status\">Account successfully created!</h2><hr />\n";
+          echo "<h3>Please log in.</h3>\n";
       ?>
       <form class="user-form">
         <input type="text" placeholder="Username/Email" />

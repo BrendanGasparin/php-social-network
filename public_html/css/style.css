@@ -12,7 +12,7 @@ header h1 {
   color: blue;
 }
 
-h1, h2.status {
+h1, h2.status, h3 {
   text-align: center;
   margin: 20px 0;
 }
