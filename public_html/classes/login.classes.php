@@ -16,7 +16,7 @@ class Login extends DBHandler {
 
         if ($query->rowCount() == 0) {
             $query = null;
-            header("location: ../index.php?error=dbqueryfailed");
+            header("location: ../index.php?error=invalidcredentials");
             exit();
         }
 
@@ -26,7 +26,7 @@ class Login extends DBHandler {
 
         if ($checkPassword == false) {
             $query = null;
-            header("location: ../index.php?error=wrongpassword");
+            header("location: ../index.php?error=invalidcredentials");
             exit();
         }
         else {
@@ -41,7 +41,7 @@ class Login extends DBHandler {
 
             if ($query->rowCount() == 0) {
                 $query = null;
-                header("location: ../index.php?error=usernotfound");
+                header("location: ../index.php?error=invalidcredentials");
                 exit();
             }
 

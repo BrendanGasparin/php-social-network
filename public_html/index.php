@@ -26,6 +26,23 @@ session_start();
       <?php
       }
 
+      // Login form error messages
+      if (isset($_GET['error'])) {
+      ?>
+      <h2 class="error"><?php 
+      
+          if ($_GET['error'] == 'dbqueryfailed') 
+              echo "Database query failed.";
+          // These should give the same GET string so as not to provide uneccessary information to hackers
+          else if ($_GET['error'] == 'invalidcredentials')
+              echo "Invalid login credentials.";
+      
+      ?></h2>
+     <!--  <hr />
+      <h3>Error in form input<h3> -->
+      <?php
+      }
+
       if (isset($_SESSION["id"])) {
         ?>
         <h2>Welcome, <?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname']; ?></h2>
