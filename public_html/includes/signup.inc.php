@@ -6,8 +6,9 @@
         Handles sign up form input.
     */
 
+    // If submit was pressed
     if (isset($_POST["submit"])) {
-        // Get the data
+        // Get the user's input data
         $firstName = $_POST["firstname"];
         $lastName = $_POST["lastname"];
         $username = $_POST["username"];
@@ -18,10 +19,6 @@
         $day = $_POST["day-picker"];
         $month = $_POST["month-picker"];
         $year = $_POST["year-picker"];
-
-        // Optional PHP error reporting
-        error_reporting(E_ALL);
-        ini_set('display_errors', 1);
 
         // Instantiate the SignupController class
         include "../classes/dbhandler.classes.php";
