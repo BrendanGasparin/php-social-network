@@ -38,19 +38,21 @@ session_start();
               echo "Invalid login credentials.";
       
       ?></h2>
-     <!--  <hr />
-      <h3>Error in form input<h3> -->
+
       <?php
       }
 
+      // LOGGED IN MAIN SECTION
       if (isset($_SESSION["id"])) {
-        ?>
-        <h2>Welcome, <?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname']; ?></h2>
-        <hr />
-        <h3 class="under-construction">This site is under construction.</h3>
-        <a href="./includes/logout.inc.php"><button class="log">Log out</button></a>
+      ?>
+      <h2>Welcome, <?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname']; ?></h2>
+      <hr />
+      <h3 class="under-construction">This site is under construction.</h3>
+      <a href="./includes/logout.inc.php"><button class="log">Log out</button></a>
       <?php
       }
+      
+      // LOGIN MENU
       else {
       ?>
       <form action="./includes/login.inc.php" class="user-form" method="post">
