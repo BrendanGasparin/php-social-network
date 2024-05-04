@@ -19,6 +19,10 @@
         $month = $_POST["month-picker"];
         $year = $_POST["year-picker"];
 
+        // Optional PHP error reporting
+        error_reporting(E_ALL);
+        ini_set('display_errors', 1);
+
         // Instantiate the SignupController class
         include "../classes/dbhandler.classes.php";
         include "../classes/signup.classes.php";
