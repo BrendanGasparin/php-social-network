@@ -1,12 +1,5 @@
 <?php
 
-    /*
-        login.inc.php
-        Author: Brendan Gasparin
-        Date: 1 May 2024
-        Handles login form input.
-    */
-
     if (isset($_POST["submit"])) {
         // Get the data
         $username = $_POST["username"];

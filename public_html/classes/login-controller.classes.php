@@ -9,6 +9,7 @@
             $this->password = $password;
         }
 
+        // Attempt to log user into the website
         public function loginUser() {
             if ($this->emptyInput()) {
                 header("location: ../index.php?error=emptyinputfield");

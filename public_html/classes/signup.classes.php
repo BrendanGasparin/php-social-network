@@ -50,6 +50,7 @@ class Signup extends DBHandler {
         return false;
     }
 
+    # Returns true if the username exists in the database, else returns false
     protected function checkUsernameExists($username) {
         $query = $this->connect()->prepare('SELECT username FROM users WHERE username = ?;');
 

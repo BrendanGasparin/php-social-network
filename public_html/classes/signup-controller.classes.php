@@ -25,6 +25,7 @@
         }
 
         public function signupUser() {
+            // Run all input checkers
             if ($this->isFirstnameEmpty()) {
                 header("location: ../signup.php?error=firstnameempty");
                 exit();
@@ -164,6 +165,7 @@
             return false;
         }
 
+        // Returns true if the username is taken, else returns false
         private function isUsernameTaken() {
             if ($this->checkUsernameExists($this->username))
                 return true;

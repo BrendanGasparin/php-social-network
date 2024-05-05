@@ -18,6 +18,7 @@ session_start();
     </header>
     <main>
       <?php
+      
       if (isset($_GET['status']) && $_GET['status'] == "signupsuccess") {
       ?>
       <h2 class="status">Account successfully created!</h2>
@@ -26,7 +27,7 @@ session_start();
       <?php
       }
 
-      // Login form error messages
+      // LOGIN FORM ERROR MESSAGES
       if (isset($_GET['error'])) {
       ?>
       <h2 class="error"><?php 

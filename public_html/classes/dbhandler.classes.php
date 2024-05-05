@@ -7,6 +7,7 @@ class DBHandler {
 
         include '../credentials/credentials.php';
 
+        // Attempt to connect to database, with error handling
         try {
             $dbhandler = new PDO('mysql:host=' . $dbHost . ';dbname=' . $dbName, $username, $password);
             return $dbhandler;

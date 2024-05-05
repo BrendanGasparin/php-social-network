@@ -32,7 +32,7 @@ class Login extends DBHandler {
         else {
             $query = $this->connect()->prepare('SELECT * FROM users WHERE username = ? OR email = ? AND password_hash = ?;');
 
-            # If the statement fails to execute then redirect to the home page with an error message
+            # If the query fails to execute or returns no users then redirect to the home page with an error message
             if (!$query->execute(array($username, $username, $password_hash[0]["password_hash"]))) {
                 $query = null;
                 header("location: ../index.php?error=dbqueryfailed");
