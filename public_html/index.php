@@ -9,9 +9,15 @@ session_start();
     <title>PHP Social Network</title>
     <link href="./css/style.css" rel="stylesheet" />
     <?php
-      if (isset($_SESSION["id"]) == false) {
+      if (isset($_SESSION["id"])) {
         ?>
-    <link href="./css/login.css" rel="stylesheet" /><?php
+    <link href="./css/homepage.css" rel="stylesheet" /><?php
+      }
+      else {
+        ?>
+    <link href="./css/login.css" rel="stylesheet" />
+        ?>
+    <?php
       }
     ?>
     <link href="./css/userform.css" rel="stylesheet" />
@@ -62,7 +68,16 @@ session_start();
     if (isset($_SESSION["id"])) {
     ?>
     <header>
+      <div class="header-menu">
       <h1>PHP Social Network</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
+      </nav>
+      </div>
+      <div class="icon-menu"></div>
     </header>
     
     <p class="centered-16px"><a href="./includes/logout.inc.php">Log out</a>.</p>
