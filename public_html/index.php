@@ -11,6 +11,12 @@ session_start();
     <link href="./css/userform.css" rel="stylesheet" />
   </head>
   <body>
+    <?php
+
+    /* LOGIN FORM */
+
+    if (isset($_SESSION["id"]) == false) {
+    ?>
     <header>
     <h1>PHP Social Network</h1>
     <hr class="largescreens-only" />
@@ -18,9 +24,9 @@ session_start();
     </header>
     <main>
       <?php
-      
-      if (isset($_GET['status']) && $_GET['status'] == "signupsuccess") {
-      ?>
+    }
+    if (isset($_GET['status']) && $_GET['status'] == "signupsuccess") {
+    ?>
       <h2 class="status">Account successfully created!</h2>
       <hr />
       <h3>Please log in.</h3>
@@ -28,7 +34,7 @@ session_start();
       }
 
       // LOGIN FORM ERROR MESSAGES
-      if (isset($_GET['error'])) {
+      if (isset($_SESSION["id"]) == false && isset($_GET['error'])) {
       ?>
       <h2 class="error"><?php 
       
@@ -43,19 +49,23 @@ session_start();
       <?php
       }
 
-      // LOGGED IN MAIN SECTION
-      if (isset($_SESSION["id"])) {
-      ?>
-      <h2>Welcome, <?php echo $_SESSION['firstname'] . ' ' . $_SESSION['lastname']; ?></h2>
-      <hr />
-      <h3 class="under-construction">This site is under construction.</h3>
-      <a href="./includes/logout.inc.php"><button class="log">Log out</button></a>
-      <?php
-      }
-      
-      // LOGIN MENU
-      else {
-      ?>
+
+
+
+      // USER HOME PAGE
+    if (isset($_SESSION["id"])) {
+    ?>
+    <header>
+      <h1>PHP Social Network</h1>
+    </header>
+    
+    <p><a href="./includes/logout.inc.php">Log out</a>.</p>
+
+    <?php
+    }
+    // LOGIN MENU
+    else {
+    ?>
       <form action="./includes/login.inc.php" class="user-form" method="post">
         <input id="username" name="username" type="text" placeholder="Username/Email" />
         <input id="password" name="password" type="password" placeholder="Password" />
