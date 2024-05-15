@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>PHP Social Network</title>
     <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/login.css" rel="stylesheet" />
     <link href="./css/userform.css" rel="stylesheet" />
   </head>
   <body>

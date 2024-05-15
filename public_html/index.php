@@ -8,6 +8,12 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>PHP Social Network</title>
     <link href="./css/style.css" rel="stylesheet" />
+    <?php
+      if (isset($_SESSION["id"]) == false) {
+        ?>
+    <link href="./css/login.css" rel="stylesheet" /><?php
+      }
+    ?>
     <link href="./css/userform.css" rel="stylesheet" />
   </head>
   <body>
@@ -59,7 +65,7 @@ session_start();
       <h1>PHP Social Network</h1>
     </header>
     
-    <p><a href="./includes/logout.inc.php">Log out</a>.</p>
+    <p class="centered-16px"><a href="./includes/logout.inc.php">Log out</a>.</p>
 
     <?php
     }
