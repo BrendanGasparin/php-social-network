@@ -1,7 +1,19 @@
+body {
+  background-color: #eeeeee;
+}
+
+header {
+  background-color: #ffffff;
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+  border-radius: 0 0 12px 12px;
+}
+
 .header-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
 }
 
 h1 {
@@ -13,7 +25,20 @@ nav {
   display: flex;
 }
 
+nav ul {
+  align-items: center;
+}
+
 nav ul li {
   margin: 0px 10px;
   font-size: 16px;
+}
+
+div.icon-menu nav, div.icon-menu nav ul {
+  width: 100vw;
+  justify-content: space-between;
+}
+
+nav ul li a img {
+  width: 24px;
 }

@@ -16,7 +16,6 @@ session_start();
       else {
         ?>
     <link href="./css/login.css" rel="stylesheet" />
-        ?>
     <?php
       }
     ?>
@@ -69,15 +68,24 @@ session_start();
     ?>
     <header>
       <div class="header-menu">
-      <h1>PHP Social Network</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Search</a></li>
-          <li><a href="#">Menu</a></li>
-        </ul>
-      </nav>
+        <h1>PHP Social Network</h1>
+        <nav>
+          <ul>
+          <li><a href="#"><img src="./images/icons/search-icon.svg" alt="Search" /></a></li>
+            <li><a href="#"><img src="./images/icons/menu-bar-icon.svg" alt="Main menu" /></a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="icon-menu"></div>
+      <div class="icon-menu">
+        <nav>
+          <ul>
+            <li><a href="#"><img src="./images/icons/home-icon.svg" alt="Home" /></a></li>
+            <li><a href="#"><img src="./images/icons/friends-icon.svg" alt="Friends" /></a></li>
+            <li><a href="#"><img src="./images/icons/message-icon.svg" alt="Messages" /></a></li>
+            <li><a href="#"><img src="./images/icons/profile-icon.svg" alt="Profile" /></a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     
     <p class="centered-16px"><a href="./includes/logout.inc.php">Log out</a>.</p>
