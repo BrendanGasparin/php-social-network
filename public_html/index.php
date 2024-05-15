@@ -87,8 +87,17 @@ session_start();
         </nav>
       </div>
     </header>
+
+    <main>
+    <div class="post-section">
+      <form>
+      <textarea rows="4" cols="33" placeholder="Wotup?"></textarea>
+      <button action="./includes/post.inc.php" class="post-button" name="submit" type="submit">Post</button>
+    </div>
+
     
     <p class="centered-16px"><a href="./includes/logout.inc.php">Log out</a>.</p>
+    </main>
 
     <?php
     }

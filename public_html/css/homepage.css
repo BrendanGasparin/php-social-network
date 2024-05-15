@@ -2,11 +2,15 @@ body {
   background-color: #eeeeee;
 }
 
-header {
+header, .post-section {
   background-color: #ffffff;
   padding-bottom: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
   border-radius: 0 0 12px 12px;
+}
+
+.post-section {
+  padding-top: 10px;
 }
 
 .header-menu {
@@ -41,4 +45,22 @@ div.icon-menu nav, div.icon-menu nav ul {
 
 nav ul li a img {
   width: 24px;
+}
+
+.post-section form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.post-button {
+    vertical-align: middle;
+    background-color: blue;
+    color: white;
+    padding: 8px;
 }
