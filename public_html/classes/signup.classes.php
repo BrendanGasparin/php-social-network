@@ -4,7 +4,7 @@
 class Signup extends DBHandler {
     # Returns true if the the username or email exists in the database, else returns false.
     protected function addUser($firstname, $lastname, $username, $email, $dob, $password) {
-        $query = $this->connect()->prepare('INSERT INTO users (firstname, lastname, username, email, dob, user_group, password_hash) VALUES (?, ?, ?, ?, ?, ?, ?);');
+        $query = $this->connect()->prepare('INSERT INTO users (first_name, last_name, username, email, dob, user_group, password_hash) VALUES (?, ?, ?, ?, ?, ?, ?);');
 
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
     

@@ -51,8 +51,8 @@ class Login extends DBHandler {
             // Set session superglobals
             $_SESSION["id"] = $user[0]["id"];
             $_SESSION["username"] = $user[0]["username"];
-            $_SESSION["firstname"] = $user[0]["firstname"];
-            $_SESSION["lastname"] = $user[0]["lastname"];
+            $_SESSION["first_name"] = $user[0]["first_name"];
+            $_SESSION["last_name"] = $user[0]["last_name"];
         }
     
         $query = null;
