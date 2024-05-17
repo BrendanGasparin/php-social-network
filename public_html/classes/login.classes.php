@@ -4,7 +4,7 @@
 class Login extends DBHandler {
     # Returns true if the the username or email exists in the database, else returns false.
     protected function getUser($username, $password) {
-        $query = $this->connect()->prepare('SELECT password_hash FROM users WHERE username = ? OR email = ?;');
+        $query = $this->connect()->prepare('SELECT password_hash FROM users WHERE UPPER(username) = ? OR email = ?;');
     
         # If the statement fails to execute then redirect to the home page with an error message
         //if (!$query->execute(array($username, $password))) {
@@ -60,7 +60,7 @@ class Login extends DBHandler {
 
     # Returns true if the the username or email exists in the database, else returns false.
     protected function checkUserExists($username, $email) {
-        $query = $this->connect()->prepare('SELECT username FROM users WHERE username = ? OR email = ?;');
+        $query = $this->connect()->prepare('SELECT username FROM users WHERE UPPER(username) = ? OR email = ?;');
 
         # If the statement fails to execute then redirect to the home page with an error message
         if (!$query->execute(array($username, $email))) {
