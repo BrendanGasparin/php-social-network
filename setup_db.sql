@@ -12,14 +12,14 @@ CREATE TABLE users (
 CREATE TABLE posts (
     id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     user_id INTEGER NOT NULL,
-    parent_post_id INTEGER NOT NULL,
+    parent_post_id INTEGER,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    modified TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    modified TIMESTAMP,
     text_content MEDIUMTEXT,
     audience INT NOT NULL,
-    likes INT NOT NULL DEFAULT 0,
+    votes INT NOT NULL DEFAULT 0,
     shares INT NOT NULL DEFAULT 0,
-    impressions INT DEFAULT 0 NOT NULL DEFAULT 0,
+    impressions INT NOT NULL DEFAULT 0,
     FOREIGN KEY(user_id) REFERENCES users(id),
     FOREIGN KEY(parent_post_id) REFERENCES posts(id)
 );

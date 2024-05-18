@@ -90,8 +90,8 @@ session_start();
 
     <main>
     <div class="post-section">
-      <form>
-      <textarea rows="4" cols="33" placeholder="Wotup?"></textarea>
+      <form action="./includes/post.inc.php" method="post">
+      <textarea rows="4" cols="33" maxlength="65535" name="text_content" placeholder="Wotup?"></textarea>
       <button action="./includes/post.inc.php" class="post-button" name="submit" type="submit">Post</button>
     </div>
 
