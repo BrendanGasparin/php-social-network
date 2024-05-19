@@ -64,3 +64,9 @@ textarea {
     color: white;
     padding: 8px;
 }
+
+div.post-block {
+  background-color: #ffffff;
+  margin: 0px auto 6px auto;
+  padding: 10px;
+}

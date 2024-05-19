@@ -8,6 +8,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>PHP Social Network</title>
     <link href="./css/style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <?php
       if (isset($_SESSION["id"])) {
         ?>
@@ -95,6 +96,37 @@ session_start();
       <button action="./includes/post.inc.php" class="post-button" name="submit" type="submit">Post</button>
     </div>
 
+
+    <!-- POSTS FEED -->
+    <script>
+      function getPosts() {
+        $.ajax({
+          url: './classes/post.classes.php',
+          type: 'GET',
+          data: { action: 'getPosts'},
+          success: function(data) {
+            var posts = JSON.parse(data);
+            var output = '';
+            for (var i = 0; i < posts.length; i++)
+            {
+              output += '<div class="post-block">';
+              output += '<h2 class="post-username">' + posts[i].first_name + ' ' + posts[i].last_name + '</h2>';
+              output += '<p>' + posts[i].text_content + '</p>';
+              output += '</div>';
+            }
+            $('#post-entries').html(output);
+          },
+          error: function(xhr, status, error) {
+            console.error('AJAX error:' + status + error);
+          }
+        });
+      }
+
+      $(document).ready(function() {
+        getPosts();
+      });
+    </script>
+    <div id="post-entries"></div>
     
     <p class="centered-16px"><a href="./includes/logout.inc.php">Log out</a>.</p>
     </main>

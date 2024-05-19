@@ -11,6 +11,10 @@
             $this->audience = $audience;
         }
 
+        public function getPosts($id) {
+            $this->selectPosts($id);
+        }
+
         // Attempt to log user into the website
         public function setPost($user_id, $text_content, $audience) {
             $this->addPost($user_id, $text_content, $audience);
