@@ -70,3 +70,12 @@ div.post-block {
   margin: 0px auto 6px auto;
   padding: 10px;
 }
+
+.post-block h2 {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+p.post-date {
+  margin: 6px 0;
+}

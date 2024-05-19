@@ -111,6 +111,7 @@ session_start();
             {
               output += '<div class="post-block">';
               output += '<h2 class="post-username">' + posts[i].first_name + ' ' + posts[i].last_name + '</h2>';
+              output += '<p class="post-date">' + posts[i].created + '</p>';
               output += '<p>' + posts[i].text_content + '</p>';
               output += '</div>';
             }
