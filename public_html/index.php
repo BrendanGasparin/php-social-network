@@ -113,6 +113,12 @@ session_start();
               output += '<h2 class="post-username">' + posts[i].first_name + ' ' + posts[i].last_name + '</h2>';
               output += '<p class="post-date">' + posts[i].created + '</p>';
               output += '<p>' + posts[i].text_content + '</p>';
+              output += '<hr />'
+              output += '<div class="vote-bar">';
+              output += '<p><span class="arrows">&uarr;</span> ' + posts[i].votes + ' <span class="arrows">&darr;</span>';
+              output += '<p class="vote-buttons">Comment</p>';
+              output += '<p class="vote-buttons">Share</p>'
+              output += '</div>';
               output += '</div>';
             }
             $('#post-entries').html(output);
